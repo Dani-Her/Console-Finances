@@ -1,5 +1,13 @@
 # Console-Finances
 
+## Goals
+
+To use JavaScript and make a code that analyzes the records to calculate each of the following:
+-The total number of months included in the dataset.
+-The net total amount of Profit/Losses over the entire period.
+-The average of the changes in Profit/Losses over the entire period.
+-The greatest increase in profits (date and amount) over the entire period.
+-The greatest decrease in losses (date and amount) over the entire period.
 
 ![image](https://user-images.githubusercontent.com/118456219/222917167-b154b485-92c0-47c4-a0e6-348ea9ab2eea.png)
 
