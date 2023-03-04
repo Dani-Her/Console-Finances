@@ -16,6 +16,8 @@ To use JavaScript and make a code that analyzes the records to calculate each of
 
 ![image](https://user-images.githubusercontent.com/118456219/222917167-b154b485-92c0-47c4-a0e6-348ea9ab2eea.png)
 
+https://dani-her.github.io/Console-Finances/
+
 ## Credits
 
 https://www.educative.io/answers/how-to-get-the-sum-of-an-array-in-javascript 
