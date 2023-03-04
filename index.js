@@ -86,3 +86,58 @@ var finances = [
     ['Jan-2017', 138230],
     ['Feb-2017', 671099]
 ];
+
+console.log("Financial Analysis")
+
+// total months
+console.log("Total months: " + finances.length)
+
+// total
+function sumArray(array){
+    let sum = 0;
+    for (let i = 0; i < array.length; i +=1) {
+        sum += array[i][1];
+    }
+    return sum;
+}
+
+console.log("Total: $" + sumArray(finances))
+
+// average change
+function diffArray(array){
+    let diff = 0;
+    for (let i = 0; i < array.length -1; i++){
+        diff += array[i+1][1]-array[i][1]
+    }
+    return diff
+}
+
+console.log("Average Change: $" + (diffArray(finances)/(finances.length-1)))
+
+
+
+// min + max base value 
+let minProfit = Number.MAX_SAFE_INTEGER;
+let minProfitDate;
+
+let maxProfit = Number.MIN_SAFE_INTEGER;
+let maxProfitDate;
+
+// loop for value comparison .. if statements for greatest increase and decrease 
+let comps = 0;
+for (let i = 1; i < finances.length; i++) {
+    const comp = finances[i][1] - finances[i - 1][1];
+    comps = comp + comps;  
+
+    if (maxProfit < comp) {
+    maxProfit = comp; 
+    maxProfitDate = finances[i][0];
+}
+if (minProfit > comp) {
+    minProfit = comp;
+    minProfitDate = finances[i][0];
+}
+}
+
+console.log(`Greatest Increase in Profits:  $${maxProfit} ${maxProfitDate}`);
+console.log(`Greatest Decrease in Profits:  $${minProfit} ${minProfitDate}`);
